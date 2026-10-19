@@ -19,8 +19,6 @@ A themed single-page e-commerce storefront for Halloween goods, built with React
 - [Pricing Rules and Coupons](#pricing-rules-and-coupons)
 - [Design System](#design-system)
 - [Deployment](#deployment)
-- [Roadmap](#roadmap)
-- [License](#license)
 
 ---
 

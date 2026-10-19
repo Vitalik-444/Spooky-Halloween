@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #070509;
+  --color-coal: #120e19;
+  --color-crypt: #1b1526;
+  --color-pump: #ff7518;
+  --color-ember: #ff9d00;
+  --color-witch: #a855f7;
+  --color-blood: #991b1b;
+  --color-cream: #f5eedb;
+  --color-ash: #9e96aa;
+  --font-gothic: "Cinzel", serif;
+  --font-cinzel-dec: "Cinzel Decorative", serif;
+  --font-spooky: "Creepster", cursive;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: #070509;
+  color: #f5eedb;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #070509;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a1f3d;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 117, 24, 0.3);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff7518;
+}
+
+.mist-overlay {
+  background: radial-gradient(circle at 50% 20%, rgba(255, 117, 24, 0.08) 0%, rgba(7, 5, 9, 0.85) 75%, #070509 100%);
+}
+
+.glow {
+  box-shadow: 0 0 25px rgba(255, 117, 24, 0.45);
+}
+
+.glow-witch {
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.4);
+}
+
+.text-glow {
+  text-shadow: 0 0 16px rgba(255, 117, 24, 0.6), 0 0 32px rgba(255, 117, 24, 0.3);
+}
+
+.text-witch-glow {
+  text-shadow: 0 0 16px rgba(168, 85, 247, 0.6);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.85rem 1.6rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.btn-p {
+  background: linear-gradient(135deg, #ff7518 0%, #d45206 100%);
+  color: #070509;
+  border: 1px solid rgba(255, 200, 100, 0.4);
+  box-shadow: 0 4px 18px rgba(255, 117, 24, 0.3);
+}
+.btn-p:hover {
+  background: linear-gradient(135deg, #ff8c3a 0%, #ff6200 100%);
+  box-shadow: 0 0 30px rgba(255, 117, 24, 0.7);
+  transform: translateY(-2px);
+}
+
+.btn-o {
+  background: rgba(18, 14, 25, 0.7);
+  border: 1px solid rgba(255, 117, 24, 0.45);
+  color: #f5eedb;
+  backdrop-filter: blur(8px);
+}
+.btn-o:hover {
+  border-color: #ff7518;
+  color: #ff7518;
+  box-shadow: 0 0 20px rgba(255, 117, 24, 0.35);
+  transform: translateY(-2px);
+}
+
+.btn-witch {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.2) 0%, rgba(107, 33, 168, 0.4) 100%);
+  border: 1px solid rgba(168, 85, 247, 0.5);
+  color: #f5eedb;
+}
+.btn-witch:hover {
+  border-color: #c084fc;
+  box-shadow: 0 0 24px rgba(168, 85, 247, 0.5);
+  transform: translateY(-2px);
+}
+
+.gothic-card {
+  background: linear-gradient(180deg, rgba(22, 17, 32, 0.85) 0%, rgba(14, 11, 20, 0.95) 100%);
+  border: 1px solid rgba(255, 117, 24, 0.18);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  position: relative;
+  backdrop-filter: blur(10px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gothic-card:hover {
+  border-color: rgba(255, 117, 24, 0.65);
+  box-shadow: 0 12px 35px rgba(255, 117, 24, 0.2), 0 0 20px rgba(168, 85, 247, 0.15);
+  transform: translateY(-4px);
+}
+
+.inp {
+  width: 100%;
+  background: rgba(11, 8, 16, 0.85);
+  border: 1px solid rgba(255, 117, 24, 0.25);
+  padding: 0.75rem 1rem;
+  color: #f5eedb;
+  border-radius: 4px;
+  transition: all 0.25s ease;
+}
+.inp:focus {
+  border-color: #ff7518;
+  box-shadow: 0 0 15px rgba(255, 117, 24, 0.3);
+  outline: none;
+}
